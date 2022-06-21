@@ -46,18 +46,38 @@ label {
   padding-bottom: 5%;
 }
 
+.first-name {
+  grid-area: firstName;
+}
+.last-name {
+  grid-area: lastName;
+}
+.email {
+  grid-area: email;
+}
+.subject {
+  grid-area: subject;
+}
+.message {
+  grid-area: message;
+}
+.btn {
+  grid-area: btn;
+}
+
 .form-grid {
   max-width: 500px;
   gap: 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'firstName lastName lastName'
+    'email email email'
+    'subject subject subject'
+    'message message message'
+    '. . btn';
 }
-.input-block {
-  grid-column: span 2;
-}
-.half {
-  grid-column: span 1;
-}
+
 .message textarea {
   width: 100%;
   min-height: 100px;
