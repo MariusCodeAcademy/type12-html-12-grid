@@ -12,12 +12,13 @@
 
 .item1 {
   grid-column: span 3;
+  grid-row: span 2;
 }
 .item2 {
   grid-column: span 3;
 }
 .item3 {
-  grid-column: 2 / span 5;
+  grid-column: span 3;
 }
 .item4,
 .item5,
