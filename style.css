@@ -1,3 +1,13 @@
+input {
+  font-size: 16px;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
 .grid1 {
   display: grid;
   /* kiek stulpeliu mes turesim */
@@ -24,4 +34,32 @@
 .item5,
 .item6 {
   grid-column: span 2;
+}
+
+/* Form =============== */
+
+.container.form {
+  background-color: rgb(154, 154, 154);
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.form-grid {
+  max-width: 500px;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.input-block {
+  grid-column: span 2;
+}
+.half {
+  grid-column: span 1;
+}
+.message textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
 }
